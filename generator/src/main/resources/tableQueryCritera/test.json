@@ -1,0 +1,14 @@
+[
+  {
+    "propertyType": "String",
+    "propertyName": "marketerId",
+    "columnName": "MARKETER_ID",
+    "queryType": "LT"
+  },
+  {
+    "propertyType": "String",
+    "propertyName": "name",
+    "columnName": "name",
+    "queryType": "EQ"
+  }
+]
