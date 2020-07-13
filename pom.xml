@@ -10,7 +10,10 @@
   <version>1.0</version>
 
   <modules>
-    <module>generator</module>
+    <module>excel</module>
+    <module>code-generator</module>
+    <module>auto-test</module>
+    <module>java</module>
   </modules>
 
   <name>java-tool</name>
