@@ -18,4 +18,10 @@ public class JVMStack {
         Double d = Double.MAX_VALUE;
         String s = "hahaia";
     }
+
+    public void testOperateStack(){
+        byte i = 15;
+        int j = 8;
+        int k = i+j;
+    }
 }

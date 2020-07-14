@@ -27,11 +27,10 @@ public class OrderTree {
         treeNode2.setLeftNode(treeNode4);
         treeNode2.setRightNode(treeNode5);
 
-        treeNode4.setLeftNode(treeNode6);
-        treeNode4.setRightNode(treeNode7);
+        treeNode3.setLeftNode(treeNode6);
 
-        treeNode7.setLeftNode(treeNode8);
-        treeNode7.setRightNode(treeNode9);
+        treeNode6.setLeftNode(treeNode8);
+        treeNode6.setRightNode(treeNode9);
 
         return treeNode1;
     }
