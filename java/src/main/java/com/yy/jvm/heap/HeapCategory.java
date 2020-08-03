@@ -14,7 +14,6 @@ public class HeapCategory {
         while(true){
             HeapCategory heapCategory = new HeapCategory();
             heapCategories.add(heapCategory);
-            Thread.sleep(10000);
         }
     }
 }
