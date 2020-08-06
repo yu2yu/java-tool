@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean id="beanPostProcessor" class="com.yy.spring.bean.MyBeanPostProcessor"></bean>
+
+    <bean id="instantiationAwareBeanPostProcessorAdapter" class="com.yy.spring.bean.MyInstantiationAwareBeanPostProcessorAdapter"></bean>
+
+    <bean id="beanFactoryPostProcessor" class="com.yy.spring.bean.MyBeanFactoryPostProcessor"></bean>
+
+    <bean id="person" class="com.yy.spring.bean.Person"
+          init-method="myInit" destroy-method="myDestory" scope="singleton"
+          p:adress="shanghai" p:name="张三" p:phone="123000098765"></bean>
+
+</beans>
