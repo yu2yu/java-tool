@@ -13,4 +13,10 @@
         <property name="name" value="yy"></property>
         <property name="age" value="18"></property>
     </bean>
+
+    <bean id="userFactory" class="com.yy.spring.ioc.fc.UserFactory"></bean>
+
+    <bean id="user2" factory-bean="userFactory" factory-method="getUser">
+        <constructor-arg value="user"></constructor-arg>
+    </bean>
 </beans>
