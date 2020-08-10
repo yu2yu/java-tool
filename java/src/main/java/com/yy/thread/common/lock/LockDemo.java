@@ -6,7 +6,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @description:
+ * @description: AQS AbstractQueuedSynchronizer，抽象队列同步器
+ *      这个AQS对象就是ReentrantLock可以实现加锁和释放锁的关键性的核心组件
+ *
  * @author: yy
  * @date: 2020/8/5 15:13
  */

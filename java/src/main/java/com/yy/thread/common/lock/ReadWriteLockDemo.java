@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * @description:
+ * @description: AQS
  * @author: yy
  * @date: 2020/8/5 15:41
  */
