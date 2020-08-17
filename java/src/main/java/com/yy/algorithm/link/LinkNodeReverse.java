@@ -35,6 +35,13 @@ public class LinkNodeReverse {
         return new_head;
     }
 
+    /**
+     * 部分链表逆序
+     * @param head
+     * @param start
+     * @param end
+     * @return
+     */
     public static LinkNode linkReverse(LinkNode head,int start,int end){
         int num=0;
         LinkNode node1 = head;
@@ -48,8 +55,21 @@ public class LinkNodeReverse {
             node1 = node1.next;
         }
 
-        return null;
-
+        node1 = prev==null?head:prev.next;
+        LinkNode curr =node1.next;
+        node1.next = tail;
+        LinkNode next = null;
+        while (curr != tail){
+            next = curr.next;
+            curr.next = node1;
+            node1 = curr;
+            curr = next;
+        }
+        if (prev != null) {
+            prev.next = node1;
+            return head;
+        }
+        return node1;
     }
 
     public static void main(String[] args) {
@@ -67,6 +87,12 @@ public class LinkNodeReverse {
         while(reverseNode != null){
             System.out.print(reverseNode.value);
             reverseNode = reverseNode.next;
+        }
+
+        LinkNode reverseNode2 = linkReverse(l1,2,4);
+        while(reverseNode2 != null){
+            System.out.print(reverseNode2.value);
+            reverseNode2 = reverseNode2.next;
         }
     }
 

@@ -96,7 +96,18 @@ public class ThreadPoolCategory {
         // new ThreadPoolCategory().testNewCachedThreadPool();
         // new ThreadPoolCategory().testFixThreadPool();
         // new ThreadPoolCategory().testScheduleThread();
-        new ThreadPoolCategory().testSinglePool();
+//        new ThreadPoolCategory().testSinglePool();
+
+
+        int num = 0;
+        while(true){
+
+            if(num<10){
+                num++;
+                continue;
+            }
+            System.out.println(num);
+        }
     }
 
 }
